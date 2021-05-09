@@ -6,7 +6,7 @@ struct Node{
 	Node* left;
 	Node* right;
 };
-bool isBinaryGreater(root,value){
+bool isBinaryGreater(Node* root,value){
 	if(root==NULL) return true;
 
 	if(root->data > value && isBinaryGreater(root->left,value) && isBinaryGreater(root->right,value)){
@@ -15,7 +15,7 @@ bool isBinaryGreater(root,value){
 	else
 	    return false;
 }
-bool isBinaryLesser(root,value){
+bool isBinaryLesser(Node* root,value){
 	if(root==NULL) return true;
 
 	if(root->data < value && isBinaryLesser(root->left,value) && isBinaryLesser(root->right,value)){
