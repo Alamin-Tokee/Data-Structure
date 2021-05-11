@@ -30,3 +30,8 @@ int main(){
 	}
 	return 0;
 }
+
+//Time Complexity O(logn)
+//Space Complexity O(1)
+//Best Case Complexity O(1)
+//Worst Case Complexity O(logn)
