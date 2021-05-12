@@ -2,7 +2,7 @@ void iterativeInorder(Node* root){
 	if(!root) return;
 
 	stack<Node*>st;
-	Node* curr;
+	Node* curr=root;
 	while(curr!=NULL || s.empty()==false){
 		while(curr!=NULL){
 			st.push(curr);
