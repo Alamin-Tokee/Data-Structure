@@ -1,3 +1,23 @@
+void iterativeInorder(Node* root){
+	if(!root) return;
+
+	stack<Node*>st;
+	Node* curr;
+	while(curr!=NULL || s.empty()==false){
+		while(curr!=NULL){
+			st.push(curr);
+			curr=curr->left;
+		}
+		curr=st.top();
+		st.pop();
+
+		cout<<curr->data << '\n';
+
+		curr=curr->right;
+	}
+
+}
+
 void iterativePreorder(Node* root){
 	if(root==NULL) return;
 
