@@ -4,7 +4,10 @@
 //Worst Case Time Complexty O(nlogn)
 //Space complexity O(n)
 
-void merge(int *A,int left,int right,int mid){
+#include <bits/stdc++.h>
+using namespace std;
+
+void merge(int *A,int left,int mid,int right){
 	int nL=mid-left+1;
 	int nR=right-mid;
 	int le[nL],ri[nR];
