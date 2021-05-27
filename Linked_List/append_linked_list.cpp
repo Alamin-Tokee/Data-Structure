@@ -17,29 +17,35 @@ Node* CreateNode(int item,Node* next){
 	newnode->next=next;
 }
 
-Node* prepend(int item,Node* head){
-	Node* newnode=CreateNode(item,head);
+Node* append(int item,Node* head){
+	Node* newnode=CreateNode(item,NULL);
 
-	return newnode;
+	if(head==NULL) return newnode;
+
+	Node* currentNode=head;
+
+	while(currentNode->next!=NULL){
+		currentNode=currentNode->next;
+	}
+	currentNode->next=newnode;
+
+	return head;
 }
 
 int main(){
-
-	Node* n1, *n2, *head, *n3;
+	Node* head, *n1, *n2;
 
 	n1=CreateNode(10,NULL);
 
 	head=n1;
+	std::cout<< head->data <<std::endl;
 
-	head=prepend(12,head);
+	head=append(12,head);
 
-	n2=head;
+	n2=head->next;
 
 	std::cout<< n2->data << std::endl;
 
-	n3=n2->next;
-
-	std::cout<< n3->data << std::endl;
 
 	return 0;
 }
