@@ -13,3 +13,8 @@ Sort Algorithm
 5. Quick Sort
 6. Heap Sort
 
+Linked List
+1. Create linked list
+2. Prepend value in linked list
+3. Append value in linked list
+
