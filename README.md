@@ -18,3 +18,9 @@ Linked List
 2. Prepend value in linked list
 3. Append value in linked list
 
+Stack & Queue
+1. Stack Implementation
+2. Queue Implementation
+3. Priority Queue Implementation(Using heap)
+
+
