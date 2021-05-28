@@ -17,6 +17,8 @@ Linked List
 1. Create linked list
 2. Prepend value in linked list
 3. Append value in linked list
+4. Count value from linked list
+5. Search value from linked list
 
 Stack & Queue
 1. Stack Implementation
